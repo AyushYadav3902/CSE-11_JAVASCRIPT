@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-top: 30px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: left;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Management System</h2>
+
+    <input type="text" id="name" placeholder="Employee Name">
+    <input type="text" id="id" placeholder="Employee ID">
+    <input type="number" id="salary" placeholder="Salary">
+    <input type="text" id="dept" placeholder="Department">
+    <br>
+
+    <button onclick="addEmployee()">Add Employee</button>
+    <br><br>
+
+    <button onclick="displayEmployees()">Display All</button>
+    <button onclick="filterSalary()">Salary > 50000</button>
+    <button onclick="totalSalary()">Total Salary</button>
+    <button onclick="averageSalary()">Average Salary</button>
+    <button onclick="countDept()">Count by Department</button>
+
+    <div id="output"></div>
+
+    <script src="exp2.js">
+    </script>
+
+</body>
+</html>
