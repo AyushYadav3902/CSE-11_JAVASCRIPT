@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+
+    <p id="para">This is a paragraph.</p>
+
+    <input type="text" id="inputText" placeholder="Enter new heading">
+
+    <br><br>
+
+    <button onclick="changeText()">Change Heading</button>
+    <button onclick="changeColor()">Change Background</button>
+    <button onclick="increaseFont()">Increase Font</button>
+    <button onclick="togglePara()">Show/Hide Paragraph</button>
+
+    <script>
+        function changeText() {
+            let text = document.getElementById("inputText").value;
+            document.getElementById("heading").innerText = text;
+        }
+
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        function increaseFont() {
+            let para = document.getElementById("para");
+            para.style.fontSize = "20px";
+        }
+
+        function togglePara() {
+            let para = document.getElementById("para");
+            if (para.style.display === "none") {
+                para.style.display = "block";
+            } else {
+                para.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
