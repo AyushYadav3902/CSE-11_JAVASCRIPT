@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Example</title>
+    <link rel="stylesheet" href="practicals_1.css">
+</head>
+<body>
+    <main>
+        <h1>Dynamic Webpage Content</h1>
+        <section id="display-card">
+            <h2 id="card-title">Welcome!</h2>
+            <p id="card-text">Click a button below to change this content.</p>
+            <img id="card-image" src="" alt="Dynamic display" style="max-width: 100%; display: none;">
+        </section>
+
+        <div class="controls">
+            <button id="text-button">Change Text</button>
+            <button id="image-button">Show Image</button>
+            <button id="theme-button">Toggle Theme</button>
+        </div>
+
+        <div class="input-group">
+            <label for="user-input">Enter a message:</label>
+            <input id="user-input" type="text" placeholder="Type something...">
+            <button id="update-button">Update Card</button>
+        </div>
+    </main>
+
+    <script src="practicals_1.js"></script>
+</body>
+</html>
